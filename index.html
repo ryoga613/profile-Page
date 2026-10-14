@@ -7,8 +7,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <title>上田 凌雅｜Webエンジニア志望</title>
 </head>
-<body>
-    <h1>ポートフォリオ / プロフィール</h1>
-    <p>はじめまして！Webエンジニアを目指して学習中です。</p>
-</body>
+
+<main>
+    <section id="works">
+        <h2>Works</h2>
+
+        <article class="work">
+        <h3>book_shelf</h3>
+        <p>本のレビューを投稿し、コメント・いいねで交流できるWebアプリ</p>
+        <ul>
+            <li>機能:レビュー投稿 / コメント / いいね / 一覧・集計表示</li>
+            <li>技術:PHP、Laravel、MySQL、phpMyAdmin、Docker</li>
+            <li>担当:HTML/CSS以外の実装</li>
+        </ul>
+        <h4>工夫・苦労した点</h4>
+        <p>設計に最も苦労しました。実装して不具合を見つけては設計から見直す、を繰り返しました。たとえば「いいねの重複」や「同じISBNの本の重複登録」に気づき、DB側の制限とコード側のチェックの両方で防ぐ形に直しました。</p>
+        <p><a href="GitHubのURL">GitHub</a> / <a href="デモのURL">デモ</a></p>
+        </article>
+
+        <article class="work">
+        <h3>勤怠管理アプリ</h3>
+        <p>スタッフの勤怠を管理し、修正申請と管理者の承認までできるWebアプリ</p>
+        <ul>
+            <li>機能:打刻・休憩の管理 / 修正申請と管理者の承認 / 勤務時間・遅刻・早退などの集計</li>
+            <li>技術:PHP、Laravel、MySQL、phpMyAdmin、Docker</li>
+            <li>担当:HTML/CSS以外の実装</li>
+        </ul>
+        <h4>工夫・苦労した点</h4>
+        <p>一般ユーザーと管理者の機能の分離に最も苦労しました。勤怠データと修正申請データを同じメソッドで扱う場面も多く、何度も実際に動かして不具合を見つけては、処理を分けて整理しました。</p>
+        <p><a href="GitHubのURL">GitHub</a> / <a href="デモのURL">デモ</a></p>
+        </article>
+    </section>
+</main>
+
+
 </html>
