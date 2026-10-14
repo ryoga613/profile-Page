@@ -1,0 +1,25 @@
+:root {
+  --bg: #0F1720;
+  --text: #DFE6EE;
+  --accent: #4FD1C5;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.8;
+}
+
+header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 120px 24px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
