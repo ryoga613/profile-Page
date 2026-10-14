@@ -1,44 +1,75 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <title>上田 凌雅｜Webエンジニア志望</title>
 </head>
 
-<main>
-    <section id="works">
-        <h2>Works</h2>
+<body>
+    <main>
+        <section id="works">
+            <h2>Works</h2>
 
-        <article class="work">
-        <h3>book_shelf</h3>
-        <p>本のレビューを投稿し、コメント・いいねで交流できるWebアプリ</p>
-        <ul>
-            <li>機能:レビュー投稿 / コメント / いいね / 一覧・集計表示</li>
-            <li>技術:PHP、Laravel、MySQL、phpMyAdmin、Docker</li>
-            <li>担当:HTML/CSS以外の実装</li>
-        </ul>
-        <h4>工夫・苦労した点</h4>
-        <p>設計に最も苦労しました。実装して不具合を見つけては設計から見直す、を繰り返しました。たとえば「いいねの重複」や「同じISBNの本の重複登録」に気づき、DB側の制限とコード側のチェックの両方で防ぐ形に直しました。</p>
-        <p><a href="GitHubのURL">GitHub</a> / <a href="デモのURL">デモ</a></p>
-        </article>
+            <article class="work">
+                <h3>book_shelf</h3>
+                <p>本のレビューを投稿し、コメント・いいねで交流できるWebアプリ</p>
+                <ul>
+                    <li>機能:レビュー投稿 / コメント / いいね / 一覧・集計表示</li>
+                    <li>技術:PHP、Laravel、MySQL、phpMyAdmin、Docker</li>
+                    <li>担当:HTML/CSS以外の実装</li>
+                </ul>
+                <h4>工夫・苦労した点</h4>
+                <p>設計に最も苦労しました。実装して不具合を見つけては設計から見直す、を繰り返しました。たとえば「いいねの重複」や「同じISBNの本の重複登録」に気づき、DB側の制限とコード側のチェックの両方で防ぐ形に直しました。
+                </p>
+                <p><a href="GitHubのURL">GitHub</a> / <a href="デモのURL">デモ</a></p>
+            </article>
 
-        <article class="work">
-        <h3>勤怠管理アプリ</h3>
-        <p>スタッフの勤怠を管理し、修正申請と管理者の承認までできるWebアプリ</p>
-        <ul>
-            <li>機能:打刻・休憩の管理 / 修正申請と管理者の承認 / 勤務時間・遅刻・早退などの集計</li>
-            <li>技術:PHP、Laravel、MySQL、phpMyAdmin、Docker</li>
-            <li>担当:HTML/CSS以外の実装</li>
-        </ul>
-        <h4>工夫・苦労した点</h4>
-        <p>一般ユーザーと管理者の機能の分離に最も苦労しました。勤怠データと修正申請データを同じメソッドで扱う場面も多く、何度も実際に動かして不具合を見つけては、処理を分けて整理しました。</p>
-        <p><a href="GitHubのURL">GitHub</a> / <a href="デモのURL">デモ</a></p>
-        </article>
-    </section>
-</main>
+            <article class="work">
+                <h3>勤怠管理アプリ</h3>
+                <p>スタッフの勤怠を管理し、修正申請と管理者の承認までできるWebアプリ</p>
+                <ul>
+                    <li>機能:打刻・休憩の管理 / 修正申請と管理者の承認 / 勤務時間・遅刻・早退などの集計</li>
+                    <li>技術:PHP、Laravel、MySQL、phpMyAdmin、Docker</li>
+                    <li>担当:HTML/CSS以外の実装</li>
+                </ul>
+                <h4>工夫・苦労した点</h4>
+                <p>一般ユーザーと管理者の機能の分離に最も苦労しました。勤怠データと修正申請データを同じメソッドで扱う場面も多く、何度も実際に動かして不具合を見つけては、処理を分けて整理しました。</p>
+                <p><a href="GitHubのURL">GitHub</a> / <a href="デモのURL">デモ</a></p>
+            </article>
+        </section>
+
+
+        <section id="career">
+            <h2>Career</h2>
+            <dl class="career-list">
+                <dt>小学校〜高校</dt>
+                <dd>野球を継続(外野手)</dd>
+                <dt>資格</dt>
+                <dd>実用英語技能検定 準2級</dd>
+                <dt>現在</dt>
+                <dd>Webエンジニアを目指して学習・制作中</dd>
+            </dl>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <ul class="contact-list">
+                <li><a href="mailto:あなたのGmail">メールを送る</a></li>
+                <li><a href="WantedlyのURL" target="_blank" rel="noopener">Wantedly</a></li>
+                <li><a href="GitHubのURL" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <p>© 2026 あなたの名前</p>
+    </footer>
+</body>
 
 
 </html>
